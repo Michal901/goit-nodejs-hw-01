@@ -33,7 +33,7 @@ async function invokeAction({ action, id, name, email, phone }) {
       break;
 
     case "remove":
-      console.log(await removeContact(id));
+      console.table(await removeContact(id));
       break;
 
     default:
